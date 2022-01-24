@@ -10,20 +10,22 @@
 window.onload = function()
 {
     /* Params: conf node, conf name, bandwidth, display name, PIN */
-    
+    var urlSearchParams = new URLSearchParams(window.location.search);
+    var params = Object.fromEntries(urlSearchParams.entries());
+
     initialise("pex-gcc.com", conference, "1264", "Agent Video", "2021");
     
     var url = window.location.href;
-    var params = url.substr(url.indexOf("?")+1).split("&");
+   // var params = url.substr(url.indexOf("?")+1).split("&");
     var i;
     var qp = {};
     for (i=0;i<params.length;i++) {
         var kv = params[i].split("=");
         qp[kv[0]] = kv[1];
     }
-    var conference = "mp" + conference.params
-    //const urlSearchParams = new URLSearchParams(window.location.search);
-   // const params = Object.fromEntries(urlSearchParams.entries());
+    var conference = "mp" + params.conference
+    
+    
 }
 </script>
 
