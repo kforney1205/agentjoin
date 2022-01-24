@@ -10,10 +10,9 @@
 window.onload = function()
 {
     /* Params: conf node, conf name, bandwidth, display name, PIN */
-
+    let videoid = "mp" + params.videoid;
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
-    let videoid = "mp" + params.videoid
     initialise("pex-gcc.com", videoid, "1264", "Agent Video", "2021");
 }
 </script>
