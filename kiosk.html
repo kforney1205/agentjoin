@@ -15,13 +15,13 @@ window.onload = function()
     
     var url = window.location.href;
     var params = url.substr(url.indexOf("?")+1).split("&");
-    var conference = "mp"+conference.params
     var i;
     var qp = {};
     for (i=0;i<params.length;i++) {
         var kv = params[i].split("=");
         qp[kv[0]] = kv[1];
     }
+    var conference = "mp" + conference.params
     //const urlSearchParams = new URLSearchParams(window.location.search);
    // const params = Object.fromEntries(urlSearchParams.entries());
 }
