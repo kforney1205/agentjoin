@@ -5,6 +5,7 @@ var bandwidth;
 var conference;
 var pin;
 var id_muteaudio;
+var cleanup;
 var rtc = null;
 
 var trans = Array();
