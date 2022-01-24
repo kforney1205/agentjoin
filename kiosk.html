@@ -11,9 +11,9 @@ window.onload = function()
 {
     /* Params: conf node, conf name, bandwidth, display name, PIN */
     
-    initialise("pex-gcc.com", videoid, "1264", "Agent Video", "2021");
-    var videoid
-    var url = window.location.href
+    initialise("pex-gcc.com", conference, "1264", "Agent Video", "2021");
+    var videoid;
+    var url = window.location.href;
     var params = url.substr(url.indexOf("?")+1).split("&");
     var i;
     var qp = {};
@@ -21,7 +21,7 @@ window.onload = function()
         var kv = params[i].split("=");
         qp[kv[0]] = kv[1];
     }
-    videoid = "mp" + params.videoid;
+    conference = "mp" + params.videoid;
     //const urlSearchParams = new URLSearchParams(window.location.search);
    // const params = Object.fromEntries(urlSearchParams.entries());
 }
