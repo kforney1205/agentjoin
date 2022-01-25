@@ -29,6 +29,10 @@ body {
   background-color: #0b607b;
 }
 
+.mediastream{
+
+}
+
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;
