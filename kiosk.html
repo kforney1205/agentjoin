@@ -16,6 +16,7 @@ window.onload = function()
     var sessionalias = ("mp" + params.sessionalias);
     initialise("pex-gcc.com", sessionalias, "1264", "Agent Video", "2021");
     var url = window.location.href;
+    muteAudio(true);
    // stream.getAudioTracks()[0].enabled = false
 
 }
@@ -25,7 +26,7 @@ window.onload = function()
 <body>
 <div class="navbar">
  <!-- <a href="#" onclick="enableMute()"><i class="fa fa-fw fa-headphones"></i>Mute Sound</a> -->
-  <a id="id_muteaudio" onlick="muteAudioStreams();" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a> 
+  <a id="id_muteaudio" onlick="muteAudio(true);" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a> 
   <a class="active" href="#" onclick="window.location='https://kforney1205.github.io/agentjoin/';" id="id_disconnect" class="webrtcbutton btn-disconnect"><i class="fa fa-fw fa-sign-out"></i> Disconnect</a> 
 </div>
 
