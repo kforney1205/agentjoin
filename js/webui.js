@@ -4,8 +4,14 @@ var video;
 var bandwidth;
 var conference;
 var pin;
+var id_selfview;
 var id_muteaudio;
+var id_mutevideo;
 var cleanup;
+var class_mute_on = "participant_action fa fa-microphone-slash fa-fw red";
+var class_mute_off = "participant_action fa fa-microphone fa-fw green";
+
+
 var rtc = null;
 
 var trans = Array();
@@ -86,6 +92,8 @@ function muteAudioStreams() {
     }
 }
 
+
+
 //var vid = document.getElementById("video");
 
 //function enableMute() { 
@@ -99,3 +107,6 @@ function muteAudioStreams() {
 //function checkMute() { 
  // alert(vid.muted);
 //} 
+
+
+    
