@@ -33,7 +33,9 @@ window.onload = function()
 <video width="90%" id="video" poster="img/earthsnake2.gif" class="mediastream" muted autoplay="autoplay"/><br>
 </div>
 <script>
-    stream.getAudioTracks()[0].enabled = false
+ 
+ let stream = navigator.mediaDevices.getUserMedia({video: true, audio: false});   
+    stream.getAudioTracks()[0].enabled = false;
 </script>
 </body>
 </html>
