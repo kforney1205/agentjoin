@@ -89,7 +89,7 @@ function initialise(node, conference, userbw, name, userpin) {
 
     pin = userpin;
     bandwidth = parseInt(userbw);
-    name = decodeURIComponent(username).replace('+', ' ');
+    //name = decodeURIComponent(username).replace('+', ' ');
 
     rtc = new PexRTC();
 
