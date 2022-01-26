@@ -73,7 +73,7 @@ function muteAudioStreams() {
     }
 }
 
-function initialise(confnode, conf, userbw, username, userpin, req_source, flash_obj) {
+function initialise(confnode, conf, userbw, username, userpin) {
     video = document.getElementById("video");
     id_selfview = document.getElementById('id_selfview');
     id_muteaudio = document.getElementById('id_muteaudio');
@@ -82,12 +82,7 @@ function initialise(confnode, conf, userbw, username, userpin, req_source, flash
     id_screenshare = document.getElementById('id_screenshare');
     id_presentation = document.getElementById('id_presentation');
 
-    flash = flash_obj;
-    if (flash) {
-        id_selfview.textContent = trans['BUTTON_HIDESELF'];
-        id_selfview.classList.add('selected');
-        videoPresentation = false;
-    }
+   
     console.log("Video: " + video);
     console.log("Bandwidth: " + userbw);
 
