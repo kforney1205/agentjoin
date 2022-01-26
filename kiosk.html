@@ -17,7 +17,6 @@ window.onload = function()
     var params = Object.fromEntries(urlSearchParams.entries());
     var sessionalias = ("mp" + params.sessionalias);
     initialise("pex-gcc.com", sessionalias, "1264", "Agent Video", "2021");
-     
 
 }
 </script> 
@@ -25,10 +24,9 @@ window.onload = function()
 
 <body>
 <div class="navbar">
-    <ul>
- <!-- <a href="#" onclick="enableMute()"><i class="fa fa-fw fa-headphones"></i>Mute Sound</a> -->
-  <li><a id="id_muteaudio" onlick="muteAudio();" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a></li>
-  <li><a class="active" href="#" onclick="window.location='https://kforney1205.github.io/agentjoin/';" id="id_disconnect" class="webrtcbutton btn-disconnect"><i class="fa fa-fw fa-sign-out"></i> Disconnect</a> </li>
+
+<a href="#" id="id_muteaudio" onclick="muteAudioStreams();" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a>
+<a href="#" onclick="window.location='https://kforney1205.github.io/agentjoin/';" id="id_disconnect" class="active webrtcbutton btn-disconnect"><i class="fa fa-fw fa-sign-out"></i> Disconnect</a>
 </ul>
 </div>
 
