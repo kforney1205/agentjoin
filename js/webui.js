@@ -97,7 +97,7 @@ function initialise(node, conference, userbw, name, userpin) {
 
     rtc.onSetup = doneSetup;
     rtc.onConnect = connected;
-    rtc.onError = handleError;
+    //rtc.onError = handleError;
     rtc.onDisconnect = remoteDisconnect;
     rtc.onHoldResume = holdresume;
     rtc.onRosterList = updateRosterList;
