@@ -16,8 +16,10 @@ window.onload = function()
     var sessionalias = ("mp" + params.sessionalias);
     initialise("pex-gcc.com", sessionalias, "1264", "Agent Video", "2021");
     var url = window.location.href;
-    stream.getAudioTracks()[0].enabled = false
-
+   // stream.getAudioTracks()[0].enabled = false
+    navigator.mediaDevices.getUserMedia({
+            video: true, audio: false
+        })
    
 }
 </script>
