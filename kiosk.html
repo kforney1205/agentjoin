@@ -16,7 +16,7 @@ window.onload = function()
     var sessionalias = ("mp" + params.sessionalias);
     initialise("pex-gcc.com", sessionalias, "1264", "Agent Video", "2021");
     var url = window.location.href;
-   // stream.getAudioTracks()[0].enabled = false
+   
 
 }
 </script>
@@ -25,67 +25,15 @@ window.onload = function()
 <body>
 <div class="navbar">
  <!-- <a href="#" onclick="enableMute()"><i class="fa fa-fw fa-headphones"></i>Mute Sound</a> -->
-  <a id="id_muteaudio" onlick="muteAudio(true);" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a> 
+  <!-- <a id="id_muteaudio" onlick="muteAudio(true);" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a> -->
   <a class="active" href="#" onclick="window.location='https://kforney1205.github.io/agentjoin/';" id="id_disconnect" class="webrtcbutton btn-disconnect"><i class="fa fa-fw fa-sign-out"></i> Disconnect</a> 
 </div>
 
 <div width='100%' height='100%' style='overflow:auto' class="vidstage" id="viewport">
 <video width="90%" id="video" poster="img/earthsnake2.gif" class="mediastream" muted autoplay="autoplay"/><br>
 </div>
-
 <script>
-// Add mute button/status
-    this.mute_element = document.createElement("div");
-    this.mute_state = participant_data["is_muted"] == "YES";
-    if (this.mute_state) {
-        this.mute_element.className = class_mute_on;
-    } else {
-        this.mute_element.className = class_mute_off;
-    }
-    this.mute_element.addEventListener('click', this.mute.bind(this), false);
-    this.element_root.appendChild(this.mute_element);
-
-    // Add transfer button
-    if (participant_data["protocol"] != "mssip") {
-        this.transfer_element = document.createElement("div");
-        this.transfer_element.className = "transferText";
-
-        var transferText = document.createElement("input");
-        transferText.setAttribute('size', '30');
-        transferText.id = "transfer_" + participant_data["uuid"];
-        var transferRole = document.createElement("select");
-        transferRole.id = "transferrole_" + participant_data["uuid"];
-        var norole = document.createElement("option");
-        norole.setAttribute('value', 'norole');
-        norole.innerHTML = "";
-        transferRole.appendChild(norole);
-        var host = document.createElement("option");
-        host.setAttribute('value', 'host');
-        host.innerHTML = "Host";
-        transferRole.appendChild(host);
-        var guest = document.createElement("option");
-        guest.setAttribute('value', 'guest');
-        guest.innerHTML = "Guest";
-        transferRole.appendChild(guest);
-        var transferPin = document.createElement("input");
-        transferPin.setAttribute('size', '5');
-        transferPin.id = "transferpin_" + participant_data["uuid"];
-        var transferButton = document.createElement("input");
-        transferButton.setAttribute('type', 'button');
-        transferButton.setAttribute('value', 'transfer');
-        transferButton.addEventListener('click', this.transfer.bind(this), false);
-
-        this.transfer_element.appendChild(transferText);
-        this.transfer_element.appendChild(transferRole);
-        this.transfer_element.appendChild(transferPin);
-        this.transfer_element.appendChild(transferButton);
-    }
-
-
-
+    stream.getAudioTracks()[0].enabled = false
 </script>
-
-
-
 </body>
 </html>
