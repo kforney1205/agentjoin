@@ -99,13 +99,13 @@ function initialise(node, conference, userbw, name, userpin) {
     rtc.onConnect = connected;
     //rtc.onError = handleError;
     rtc.onDisconnect = remoteDisconnect;
-    rtc.onHoldResume = holdresume;
-    rtc.onRosterList = updateRosterList;
-    rtc.onPresentation = presentationStartStop;
-    rtc.onPresentationReload = loadPresentation;
-    rtc.onScreenshareStopped = unpresentScreen;
-    rtc.onPresentationConnected = loadPresentationStream;
-    rtc.onPresentationDisconnected = remotePresentationClosed;
+    //rtc.onHoldResume = holdresume;
+    //rtc.onRosterList = updateRosterList;
+    //rtc.onPresentation = presentationStartStop;
+    //rtc.onPresentationReload = loadPresentation;
+    //rtc.onScreenshareStopped = unpresentScreen;
+    //rtc.onPresentationConnected = loadPresentationStream;
+    //rtc.onPresentationDisconnected = remotePresentationClosed;
 
 
     rtc.makeCall(node, conference, name, bandwidth);
