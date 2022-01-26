@@ -86,16 +86,16 @@ function muteAudioStreams() {
     }
 }
 
-var vid = document.getElementById("video");
+//var vid = document.getElementById("video");
 
-function enableMute() { 
-  vid.muted = true;
-} 
+//function enableMute() { 
+ // vid.muted = true;
+//} 
 
-function disableMute() { 
-  vid.muted = false;
-} 
+//function disableMute() { 
+//  vid.muted = false;
+//} 
 
-function checkMute() { 
-  alert(vid.muted);
-} 
+//function checkMute() { 
+ // alert(vid.muted);
+//} 
