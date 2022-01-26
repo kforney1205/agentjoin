@@ -15,8 +15,8 @@ var class_mute_off = "participant_action fa fa-microphone fa-fw green";
 var rtc = null;
 
 var trans = Array();
-trans['BUTTON_MUTEAUDIO'] = "Mute Audio";
-trans['BUTTON_UNMUTEAUDIO'] = "Unmute Audio";
+trans['BUTTON_MUTEAUDIO'] = "Mute Mic";
+trans['BUTTON_UNMUTEAUDIO'] = "Unmute Mic";
 trans['BUTTON_MUTEVIDEO'] = "Mute Video";
 trans['BUTTON_UNMUTEVIDEO'] = "Unmute Video";
 trans['BUTTON_FULLSCREEN'] = "Fullscreen";
