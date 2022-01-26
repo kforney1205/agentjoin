@@ -73,7 +73,9 @@ function muteAudioStreams() {
     }
 }
 
-function initialise(confnode, conf, userbw, username, userpin) {
+
+
+function initialise(node, conference, userbw, name, userpin) {
     video = document.getElementById("video");
     id_selfview = document.getElementById('id_selfview');
     id_muteaudio = document.getElementById('id_muteaudio');
@@ -82,14 +84,12 @@ function initialise(confnode, conf, userbw, username, userpin) {
     id_screenshare = document.getElementById('id_screenshare');
     id_presentation = document.getElementById('id_presentation');
 
-   
     console.log("Video: " + video);
     console.log("Bandwidth: " + userbw);
 
     pin = userpin;
     bandwidth = parseInt(userbw);
     name = decodeURIComponent(username).replace('+', ' ');
-    source = req_source;
 
     rtc = new PexRTC();
 
@@ -107,12 +107,29 @@ function initialise(confnode, conf, userbw, username, userpin) {
     rtc.onPresentationConnected = loadPresentationStream;
     rtc.onPresentationDisconnected = remotePresentationClosed;
 
-    conference = conf;
-    console.log("Conference: " + conference);
 
-    startTime = new Date();
-    rtc.makeCall(confnode, conference, name, bandwidth, source, flash);
+    rtc.makeCall(node, conference, name, bandwidth);
 }
+
+// function initialise(node, conference, userbw, name, userpin) {
+//    video = document.getElementById("video");
+//    console.log("Bandwidth: " + userbw);
+//    console.log("Conference: " + conference);
+
+//    bandwidth = parseInt(userbw);
+
+//    rtc = new PexRTC();
+
+//    window.addEventListener('beforeunload', finalise);
+
+ //   rtc.onSetup = doneSetup;
+ //   rtc.onConnect = connected;
+ //   rtc.onError = remoteDisconnect;
+ //   rtc.onDisconnect = remoteDisconnect;
+
+ //   rtc.makeCall(node, conference, name, bandwidth);
+// }
+
 
 
 //var vid = document.getElementById("video");
