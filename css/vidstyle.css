@@ -63,11 +63,11 @@ max-height: 540px;
 }
 
 #btn-bg{
-  width: 82px;
-  height: 82px;
+  width: 42px;
+  height: 42px;
   background: #cdd3c9;
-  border-radius: 41px;
-  margin: 0 auto 20px;
+  border-radius: 21px;
+  margin: 0 auto 10px;
   border-bottom: 2px solid #2a2a2a;
   border-top: 2px solid #fff;
   overflow: hidden;
@@ -82,10 +82,10 @@ max-height: 540px;
 }
 
 #btn-highlight{
-  width: 41px;
-  height: 82px;
+  width: 21px;
+  height: 42px;
   background: #eee;
-  margin-left: 41px;
+  margin-left: 21px;
 }
 
 .active #btn-highlight{
@@ -94,12 +94,12 @@ max-height: 540px;
 
 #btn-ring{
   position: absolute;
-  width: 42px;
-  height: 42px;
-  border: 10px solid #2a2a2a;
-  top: 10px;
-  left: 10px;
-  border-radius: 31px;
+  width: 21px;
+  height: 21px;
+  border: 5px solid #2a2a2a;
+  top: 5px;
+  left: 5px;
+  border-radius: 16px;
 }
 
 .active #btn-ring{
@@ -107,9 +107,9 @@ max-height: 540px;
 }
 
 #ring-line{
-  width: 10px;
-  height: 41px;
-  margin: -14px auto;
+  width: 5px;
+  height: 21px;
+  margin: -7px auto;
   background: #2a2a2a;
   border-radius: 7px;
   border-right: 3px solid #eee;
