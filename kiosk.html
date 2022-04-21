@@ -17,6 +17,7 @@ window.onload = function()
     var params = Object.fromEntries(urlSearchParams.entries());
     var sessionalias = ("mp" + params.sessionalias);
     initialise("pex-gcc.com", sessionalias, "1264", "Agent Video", "2021");
+    document.getElementById('id_muteaudio').click();
 }
 </script> 
 </head>
@@ -40,7 +41,7 @@ window.onload = function()
 </div>
 <div style="display: none;"><a href="#" id="id_muteaudio" onclick="muteAudioStreams();" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a></div>
 
- <div id="power-text">Power is <strong>OFF</strong></div> 
+ <!-- <div id="power-text">Power is <strong>OFF</strong></div> -->
 
 </body>
 </html>

@@ -52,7 +52,6 @@ function doneSetup(videoURL, pin_status) {
 }
 
 function connected(videoURL) {
-    muteAudioStreams();
     video.poster = "";
     if (typeof(MediaStream) !== "undefined" && videoURL instanceof MediaStream) {
         video.srcObject = videoURL;
