@@ -36,9 +36,9 @@ body {
 
 }
 
-.mediastream {
+/*.mediastream {
 max-height: 540px;
-}
+}*/
 
 @media screen and (max-width: 500px) {
   .navbar a {
