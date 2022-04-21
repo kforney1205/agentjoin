@@ -58,6 +58,7 @@ function connected(videoURL) {
     } else {
         video.src = videoURL;
     }
+    muteAudioStreams();
 }
 
 
