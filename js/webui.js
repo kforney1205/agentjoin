@@ -111,6 +111,16 @@ function initialise(node, conference, userbw, name, userpin) {
     rtc.makeCall(node, conference, name, bandwidth);
 }
 
+//PowerButton for Player
+$('#btn-bg').click(function(){
+  $('#btn-bg').toggleClass('active');
+  if($('#btn-bg').hasClass("active")){
+    $('#power-text strong').text('ON').css('color', '#61fc8c');
+  }else{
+    $('#power-text strong').text('OFF').css('color', '#2a2a2a');
+  }
+});
+
 // function initialise(node, conference, userbw, name, userpin) {
 //    video = document.getElementById("video");
 //    console.log("Bandwidth: " + userbw);
