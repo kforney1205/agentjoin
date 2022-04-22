@@ -47,15 +47,40 @@ max-height: 540px;
   }
 }
 
+/* Rectangular Power Button */
+/* Trim */
+.trim {
+  display: inline-block;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.trim:before {
+  content: '';
+  position: absolute;
+  border: white solid 4px;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+.trim:hover:before {
+  opacity: 1;
+}
 
-/* Power Button*/
 
-/* body{
+/* Circular Power Button
+
+ body{
   background: #ec8e6b;
   padding-top: 100px;
   font-family: Arial, Helvetica, Sans-serif;
   text-align: center;
-} */
+} 
 
 #power-text{
   color: #2a2a2a;
@@ -120,4 +145,4 @@ max-height: 540px;
   background: #61fc8c;
   border-right: 3px solid #52555d;
   border-left: 3px solid #2d3036;
-}
+} */
