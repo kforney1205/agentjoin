@@ -48,7 +48,18 @@ max-height: 540px;
 }
 
 /* Rectangular Power Button */
-/* Trim */
+
+.button {
+  margin: .4em;
+  padding: 1em;
+  cursor: pointer;
+  background: #ececec;
+  text-decoration: none;
+  color: #666;
+}
+
+/* Trim Style of Button */
+
 .trim {
   display: inline-block;
   position: relative;
